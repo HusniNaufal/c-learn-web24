@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", function () {
         <button class="delete-btn">Hapus</button>
       `;
       
-      // Add delete functionality
+      // tomboldelete
       const deleteButton = taskElement.querySelector('.delete-btn');
       deleteButton.addEventListener('click', function() {
         taskElement.remove();
         
-        // Show "Tugas Kosong" message if no tasks left
+        //tampilan tgs kosong
         if (taskList.children.length === 0) {
           const emptyMessage = document.createElement('h2');
           emptyMessage.id = 'tgskosong';
